@@ -36,8 +36,9 @@ namespace clinic_2
             using (var cnn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["defaulte"].ConnectionString))
             {
                 cnn.Open();
+               
+                cmd = new SQLiteCommand("SELECT * FROM examinations where patient_id = @id", cnn);
                 cmd.Parameters.AddWithValue("id", patient_id);
-                cmd = new SQLiteCommand("SELECT * FROM examinations where patient_id =1 ", cnn);
                 rdr = cmd.ExecuteReader();
                 while (rdr.Read())
                 {
@@ -57,7 +58,10 @@ namespace clinic_2
             using (var cnn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["defaulte"].ConnectionString))
             {
                 cnn.Open();
-                cmd = new SQLiteCommand("SELECT * FROM patient_info ", cnn);
+                
+                cmd = new SQLiteCommand("SELECT * FROM patient_info where full_name LIKE @full_name", cnn);
+                cmd.Parameters.AddWithValue("full_name", search_tb.Text+"%");
+
                 rdr = cmd.ExecuteReader();
                 while (rdr.Read())
                 {

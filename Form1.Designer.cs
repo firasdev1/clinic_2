@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.patient_info = new System.Windows.Forms.ListView();
-            this.search_tb = new System.Windows.Forms.TextBox();
-            this.search_btn = new System.Windows.Forms.Button();
-            this.examinations = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.search_tb = new System.Windows.Forms.TextBox();
+            this.search_btn = new System.Windows.Forms.Button();
+            this.examinations = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // patient_info
@@ -62,13 +62,34 @@
             this.patient_info.View = System.Windows.Forms.View.Details;
             this.patient_info.Click += new System.EventHandler(this.patient_info_Click);
             // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "id";
+            this.columnHeader3.Width = 120;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "full_name";
+            this.columnHeader4.Width = 100;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "address";
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "blood_type";
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "age";
+            // 
             // search_tb
             // 
             this.search_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search_tb.Location = new System.Drawing.Point(12, 35);
-            this.search_tb.Multiline = true;
             this.search_tb.Name = "search_tb";
-            this.search_tb.Size = new System.Drawing.Size(287, 50);
+            this.search_tb.Size = new System.Drawing.Size(287, 30);
             this.search_tb.TabIndex = 1;
             // 
             // search_btn
@@ -105,28 +126,6 @@
             // 
             this.columnHeader2.Text = "date";
             this.columnHeader2.Width = 100;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "id";
-            this.columnHeader3.Width = 120;
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Text = "full_name";
-            this.columnHeader4.Width = 100;
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "address";
-            // 
-            // columnHeader6
-            // 
-            this.columnHeader6.Text = "blood_type";
-            // 
-            // columnHeader7
-            // 
-            this.columnHeader7.Text = "age";
             // 
             // Form1
             // 

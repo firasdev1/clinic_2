@@ -78,6 +78,53 @@ namespace clinic_2.forms
                 }
                 cnn.Close();
             }
+            birth_info.Items.Clear();
+            using (var cnn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["defaulte"].ConnectionString))
+            {
+                cnn.Open();
+
+                cmd = new SQLiteCommand("SELECT * FROM birth_info where patient_id = @id", cnn);
+                cmd.Parameters.AddWithValue("id", patient_id);
+                rdr = cmd.ExecuteReader();
+                while (rdr.Read())
+                {
+                    var item1 = birth_info.Items.Add(rdr[0].ToString());
+                    item1.SubItems.Add(rdr[1].ToString());
+                    item1.SubItems.Add(rdr[2].ToString());
+                    item1.SubItems.Add(rdr[3].ToString());
+                    item1.SubItems.Add(rdr[4].ToString());
+                    item1.SubItems.Add(rdr[5].ToString());
+                    item1.SubItems.Add(rdr[6].ToString());
+
+
+                }
+                cnn.Close();
+            }
+        }
+
+        private void patient_list_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void search_tb_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

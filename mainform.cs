@@ -17,9 +17,8 @@ namespace clinic_2
     public partial class mainform : Form
     {
         SQLiteCommand cmd;
-        SQLiteDataReader rdr;
         private Form activeform;
-        private Button currentbtn ;
+        private Button currentbtn;
         public mainform()
         {
             InitializeComponent();
@@ -27,14 +26,14 @@ namespace clinic_2
 
         private void Form1_Load(object sender, EventArgs e)
         {
-      
+
         }
 
         private void patient_info_Click(object sender, EventArgs e)
         {
-            
+
         }
-        private void openchildform(Form childform, object btnsender) 
+        private void openchildform(Form childform, object btnsender)
         {
             if (activeform != null) { activeform.Close(); }
             activeform = childform;
@@ -45,13 +44,13 @@ namespace clinic_2
             this.panel4.Tag = childform;
             childform.BringToFront();
             childform.Show();
-            lbltitel.Text=childform.Text;
-        
+            lbltitel.Text = childform.Text;
+
         }
 
         private void search_btn_Click(object sender, EventArgs e)
         {
-          
+
         }
 
         private void search_tb_TextChanged(object sender, EventArgs e)
@@ -76,12 +75,27 @@ namespace clinic_2
 
         private void button2_Click(object sender, EventArgs e)
         {
-            currentbtn = (Button)sender;
+            openchildform(new forms.examination(), sender);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             currentbtn = (Button)sender;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+         
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            openchildform(new forms.addnewpatient(), sender);
         }
     }
 }

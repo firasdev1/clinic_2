@@ -55,6 +55,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="forms\addnewpatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\addnewpatient.Designer.cs">
+      <DependentUpon>addnewpatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\examination.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\examination.Designer.cs">
+      <DependentUpon>examination.cs</DependentUpon>
+    </Compile>
     <Compile Include="mainform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +83,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlDataAccess.cs" />
+    <EmbeddedResource Include="forms\addnewpatient.resx">
+      <DependentUpon>addnewpatient.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mainform.resx">
       <DependentUpon>mainform.cs</DependentUpon>
     </EmbeddedResource>

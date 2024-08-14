@@ -47,7 +47,12 @@ namespace clinic_2
             lbltitel.Text = childform.Text;
 
         }
-
+        private void OpenNewForm(Form childform, object btnsender)
+        {
+            childform.TopLevel = true;
+            childform.BringToFront();
+            childform.Show();
+        }
         private void search_btn_Click(object sender, EventArgs e)
         {
 
@@ -80,7 +85,8 @@ namespace clinic_2
 
         private void button3_Click(object sender, EventArgs e)
         {
-            currentbtn = (Button)sender;
+            OpenNewForm(new forms.Form_AddNewPatient(), sender);
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

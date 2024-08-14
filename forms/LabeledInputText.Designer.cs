@@ -50,6 +50,7 @@
             this.txt_Value.Name = "txt_Value";
             this.txt_Value.Size = new System.Drawing.Size(191, 22);
             this.txt_Value.TabIndex = 1;
+            this.txt_Value.TextChanged += new System.EventHandler(this.txt_Value_TextChanged);
             // 
             // LabeledInputText
             // 

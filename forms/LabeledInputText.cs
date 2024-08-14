@@ -34,5 +34,10 @@ namespace clinic_2.Widgets
             get => lbl_Title.Text;
             set => lbl_Title.Text = value;
         }
+
+        private void txt_Value_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

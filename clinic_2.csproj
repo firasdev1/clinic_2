@@ -55,11 +55,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="forms\addnewpatient.cs">
+    <Compile Include="forms\add_examination.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\addnewpatient.Designer.cs">
-      <DependentUpon>addnewpatient.cs</DependentUpon>
+    <Compile Include="forms\add_examination.Designer.cs">
+      <DependentUpon>add_examination.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\examination.cs">
       <SubType>Form</SubType>
@@ -95,8 +95,11 @@
     <Compile Include="forms\LabeledInputText.Designer.cs">
       <DependentUpon>LabeledInputText.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="forms\addnewpatient.resx">
-      <DependentUpon>addnewpatient.cs</DependentUpon>
+    <EmbeddedResource Include="forms\add_examination.resx">
+      <DependentUpon>add_examination.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\examination.resx">
+      <DependentUpon>examination.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\Form_AddNewPatient.resx">
       <DependentUpon>Form_AddNewPatient.cs</DependentUpon>

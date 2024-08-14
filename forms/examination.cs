@@ -75,5 +75,11 @@ namespace clinic_2.forms
                 }
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+           add_examination add_Examination_obj = new add_examination();
+            add_Examination_obj.Show();
+        }
     }
 }

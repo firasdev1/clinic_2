@@ -85,7 +85,6 @@ namespace clinic_2
 
         private void button3_Click(object sender, EventArgs e)
         {
-            OpenNewForm(new forms.Form_AddNewPatient(), sender);
 
         }
 
@@ -101,7 +100,7 @@ namespace clinic_2
 
         private void button5_Click(object sender, EventArgs e)
         {
-            openchildform(new forms.addnewpatient(), sender);
+            openchildform(new forms.Form_AddNewPatient(), sender);
         }
     }
 }

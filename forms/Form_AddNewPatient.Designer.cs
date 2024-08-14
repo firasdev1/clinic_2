@@ -33,12 +33,12 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_Cancel = new System.Windows.Forms.Button();
-            this.btn_Save = new System.Windows.Forms.Button();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_Cancel = new System.Windows.Forms.Button();
+            this.btn_Save = new System.Windows.Forms.Button();
             this.labeledInputText5 = new clinic_2.Widgets.LabeledInputText();
             this.labeledInputText6 = new clinic_2.Widgets.LabeledInputText();
             this.labeledInputText12 = new clinic_2.Widgets.LabeledInputText();
@@ -60,13 +60,13 @@
             this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
             this.flowLayoutPanel4.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -133,36 +133,6 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Contact Info";
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.btn_Cancel);
-            this.panel1.Controls.Add(this.btn_Save);
-            this.panel1.Location = new System.Drawing.Point(12, 590);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1387, 29);
-            this.panel1.TabIndex = 2;
-            // 
-            // btn_Cancel
-            // 
-            this.btn_Cancel.BackColor = System.Drawing.SystemColors.Control;
-            this.btn_Cancel.Location = new System.Drawing.Point(1228, 3);
-            this.btn_Cancel.Name = "btn_Cancel";
-            this.btn_Cancel.Size = new System.Drawing.Size(75, 23);
-            this.btn_Cancel.TabIndex = 1;
-            this.btn_Cancel.Text = "Cancel";
-            this.btn_Cancel.UseVisualStyleBackColor = false;
-            this.btn_Cancel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btn_Cancel_MouseClick);
-            // 
-            // btn_Save
-            // 
-            this.btn_Save.BackColor = System.Drawing.SystemColors.Control;
-            this.btn_Save.Location = new System.Drawing.Point(1309, 3);
-            this.btn_Save.Name = "btn_Save";
-            this.btn_Save.Size = new System.Drawing.Size(75, 23);
-            this.btn_Save.TabIndex = 0;
-            this.btn_Save.Text = "Save";
-            this.btn_Save.UseVisualStyleBackColor = false;
-            // 
             // splitContainer2
             // 
             this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -202,6 +172,36 @@
             this.flowLayoutPanel4.Name = "flowLayoutPanel4";
             this.flowLayoutPanel4.Size = new System.Drawing.Size(853, 264);
             this.flowLayoutPanel4.TabIndex = 7;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btn_Cancel);
+            this.panel1.Controls.Add(this.btn_Save);
+            this.panel1.Location = new System.Drawing.Point(12, 590);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1387, 29);
+            this.panel1.TabIndex = 2;
+            // 
+            // btn_Cancel
+            // 
+            this.btn_Cancel.BackColor = System.Drawing.SystemColors.Control;
+            this.btn_Cancel.Location = new System.Drawing.Point(1228, 3);
+            this.btn_Cancel.Name = "btn_Cancel";
+            this.btn_Cancel.Size = new System.Drawing.Size(75, 23);
+            this.btn_Cancel.TabIndex = 1;
+            this.btn_Cancel.Text = "Cancel";
+            this.btn_Cancel.UseVisualStyleBackColor = false;
+            this.btn_Cancel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btn_Cancel_MouseClick);
+            // 
+            // btn_Save
+            // 
+            this.btn_Save.BackColor = System.Drawing.SystemColors.Control;
+            this.btn_Save.Location = new System.Drawing.Point(1309, 3);
+            this.btn_Save.Name = "btn_Save";
+            this.btn_Save.Size = new System.Drawing.Size(75, 23);
+            this.btn_Save.TabIndex = 0;
+            this.btn_Save.Text = "Save";
+            this.btn_Save.UseVisualStyleBackColor = false;
             // 
             // labeledInputText5
             // 
@@ -340,7 +340,7 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(1411, 631);
+            this.ClientSize = new System.Drawing.Size(1411, 630);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
@@ -355,13 +355,13 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             this.splitContainer2.Panel1.ResumeLayout(false);
             this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
             this.flowLayoutPanel3.ResumeLayout(false);
             this.flowLayoutPanel4.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

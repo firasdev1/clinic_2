@@ -48,21 +48,6 @@ namespace clinic_2
 
         }
 
-        private void search_btn_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void search_tb_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void examinations_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void panel4_Paint(object sender, PaintEventArgs e)
         {
 
@@ -82,12 +67,6 @@ namespace clinic_2
         {
             currentbtn = (Button)sender;
         }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button4_Click(object sender, EventArgs e)
         {
          

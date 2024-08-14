@@ -60,6 +60,14 @@ namespace clinic_2.forms
         private void patient_list_Click(object sender, EventArgs e)
         {
             examinations.Items.Clear();
+            illneses.Items.Clear();
+            analyses.Items.Clear();
+            medical_med.Items.Clear();
+            male.Text = string.Empty;
+            female.Text = string.Empty;
+            normal.Text = string.Empty; 
+            caysary.Text = string.Empty;    
+            miscarryeg.Text = string.Empty;
             string patient_id = patient_list.SelectedItems[0].SubItems[0].Text;
             string patient_name = patient_list.SelectedItems[0].SubItems[1].Text;
             using (var cnn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["defaulte"].ConnectionString))
@@ -71,35 +79,60 @@ namespace clinic_2.forms
                 rdr = cmd.ExecuteReader();
                 while (rdr.Read())
                 {
-                    var item1 = examinations.Items.Add(rdr[0].ToString());
-                    item1.SubItems.Add(rdr[1].ToString());
-                    item1.SubItems.Add(rdr[2].ToString());
+                    var item1 = examinations.Items.Add(rdr[2].ToString());
+                    item1.SubItems.Add(rdr[3].ToString());
+                   
 
                 }
-                cnn.Close();
-            }
-            birth_info.Items.Clear();
-            using (var cnn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["defaulte"].ConnectionString))
-            {
-                cnn.Open();
-
+                
                 cmd = new SQLiteCommand("SELECT * FROM birth_info where patient_id = @id", cnn);
                 cmd.Parameters.AddWithValue("id", patient_id);
                 rdr = cmd.ExecuteReader();
                 while (rdr.Read())
                 {
-                    var item1 = birth_info.Items.Add(rdr[0].ToString());
-                    item1.SubItems.Add(rdr[1].ToString());
+                    
+                     number.Text =  rdr[1].ToString();
+                    male.Text = rdr[2].ToString();
+                    female.Text = rdr[3].ToString();
+                    normal.Text= rdr[4].ToString();
+                    caysary.Text  = rdr[5].ToString();
+                    miscarryeg.Text= rdr[6].ToString();
+                }
+
+                cmd = new SQLiteCommand("SELECT * FROM analyses where patient_id = @id", cnn);
+                cmd.Parameters.AddWithValue("id", patient_id);
+                rdr = cmd.ExecuteReader();
+                while (rdr.Read())
+                {
+                    var item1 = analyses.Items.Add(rdr[1].ToString());
                     item1.SubItems.Add(rdr[2].ToString());
-                    item1.SubItems.Add(rdr[3].ToString());
-                    item1.SubItems.Add(rdr[4].ToString());
-                    item1.SubItems.Add(rdr[5].ToString());
-                    item1.SubItems.Add(rdr[6].ToString());
-
-
+                }
+                cmd = new SQLiteCommand("SELECT * FROM illnisss where patient_id = @id", cnn);
+                cmd.Parameters.AddWithValue("id", patient_id);
+                rdr = cmd.ExecuteReader();
+                while (rdr.Read())
+                {
+                    var item1 = illneses.Items.Add(rdr[2].ToString());
+                }
+                cmd = new SQLiteCommand("SELECT * FROM medical_medicinces where patient_id = @id", cnn);
+                cmd.Parameters.AddWithValue("id", patient_id);
+                rdr = cmd.ExecuteReader();
+                while (rdr.Read())
+                {
+                    var item1 = medical_med.Items.Add(rdr[1].ToString());
+                }
+                cmd = new SQLiteCommand("SELECT * FROM surgiryes where patient_id = @id", cnn);
+                cmd.Parameters.AddWithValue("id", patient_id);
+                rdr = cmd.ExecuteReader();
+                while (rdr.Read())
+                {
+                    var item1 = syrgerys.Items.Add(rdr[1].ToString());
                 }
                 cnn.Close();
             }
+           
+          
+            
         }
 
         private void patient_list_SelectedIndexChanged(object sender, EventArgs e)

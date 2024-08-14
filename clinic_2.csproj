@@ -86,6 +86,9 @@
     <EmbeddedResource Include="forms\addnewpatient.resx">
       <DependentUpon>addnewpatient.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="forms\examination.resx">
+      <DependentUpon>examination.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mainform.resx">
       <DependentUpon>mainform.cs</DependentUpon>
     </EmbeddedResource>

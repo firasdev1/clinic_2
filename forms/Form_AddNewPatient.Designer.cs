@@ -39,6 +39,15 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_Cancel = new System.Windows.Forms.Button();
             this.btn_Save = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lbl_BloodType = new System.Windows.Forms.Label();
+            this.cb_BloodType = new System.Windows.Forms.ComboBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dtp_BirthDate = new System.Windows.Forms.DateTimePicker();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.cb_Gender = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.labeledInputText5 = new clinic_2.Widgets.LabeledInputText();
             this.labeledInputText6 = new clinic_2.Widgets.LabeledInputText();
             this.labeledInputText12 = new clinic_2.Widgets.LabeledInputText();
@@ -47,11 +56,8 @@
             this.labeledInputText1 = new clinic_2.Widgets.LabeledInputText();
             this.labeledInputText2 = new clinic_2.Widgets.LabeledInputText();
             this.labeledInputText3 = new clinic_2.Widgets.LabeledInputText();
-            this.labeledInputText4 = new clinic_2.Widgets.LabeledInputText();
             this.labeledInputText8 = new clinic_2.Widgets.LabeledInputText();
             this.labeledInputText9 = new clinic_2.Widgets.LabeledInputText();
-            this.labeledInputText10 = new clinic_2.Widgets.LabeledInputText();
-            this.labeledInputText11 = new clinic_2.Widgets.LabeledInputText();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -67,6 +73,9 @@
             this.flowLayoutPanel3.SuspendLayout();
             this.flowLayoutPanel4.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -101,7 +110,7 @@
             this.flowLayoutPanel1.Controls.Add(this.labeledInputText1);
             this.flowLayoutPanel1.Controls.Add(this.labeledInputText2);
             this.flowLayoutPanel1.Controls.Add(this.labeledInputText3);
-            this.flowLayoutPanel1.Controls.Add(this.labeledInputText4);
+            this.flowLayoutPanel1.Controls.Add(this.panel4);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -113,8 +122,8 @@
             // 
             this.flowLayoutPanel2.Controls.Add(this.labeledInputText8);
             this.flowLayoutPanel2.Controls.Add(this.labeledInputText9);
-            this.flowLayoutPanel2.Controls.Add(this.labeledInputText10);
-            this.flowLayoutPanel2.Controls.Add(this.labeledInputText11);
+            this.flowLayoutPanel2.Controls.Add(this.panel3);
+            this.flowLayoutPanel2.Controls.Add(this.panel2);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 0);
@@ -124,7 +133,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox2.BackColor = System.Drawing.SystemColors.Window;
             this.groupBox2.Controls.Add(this.splitContainer2);
             this.groupBox2.Location = new System.Drawing.Point(12, 299);
             this.groupBox2.Name = "groupBox2";
@@ -203,9 +212,98 @@
             this.btn_Save.Text = "Save";
             this.btn_Save.UseVisualStyleBackColor = false;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.cb_BloodType);
+            this.panel2.Controls.Add(this.lbl_BloodType);
+            this.panel2.Location = new System.Drawing.Point(3, 102);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(454, 27);
+            this.panel2.TabIndex = 3;
+            // 
+            // lbl_BloodType
+            // 
+            this.lbl_BloodType.AutoSize = true;
+            this.lbl_BloodType.Location = new System.Drawing.Point(-1, 6);
+            this.lbl_BloodType.Name = "lbl_BloodType";
+            this.lbl_BloodType.Size = new System.Drawing.Size(78, 16);
+            this.lbl_BloodType.TabIndex = 0;
+            this.lbl_BloodType.Text = "Blood Type";
+            // 
+            // cb_BloodType
+            // 
+            this.cb_BloodType.FormattingEnabled = true;
+            this.cb_BloodType.Items.AddRange(new object[] {
+            "O RH+",
+            "O RH-",
+            "A RH+",
+            "A RH-",
+            "B RH+",
+            "B RH-",
+            "AB RH+",
+            "AB RH-"});
+            this.cb_BloodType.Location = new System.Drawing.Point(89, 3);
+            this.cb_BloodType.Name = "cb_BloodType";
+            this.cb_BloodType.Size = new System.Drawing.Size(362, 24);
+            this.cb_BloodType.TabIndex = 1;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.dtp_BirthDate);
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Location = new System.Drawing.Point(3, 69);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(454, 27);
+            this.panel3.TabIndex = 4;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(-1, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(61, 16);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Bith Date";
+            // 
+            // dtp_BirthDate
+            // 
+            this.dtp_BirthDate.Location = new System.Drawing.Point(89, 4);
+            this.dtp_BirthDate.Name = "dtp_BirthDate";
+            this.dtp_BirthDate.Size = new System.Drawing.Size(362, 22);
+            this.dtp_BirthDate.TabIndex = 1;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.cb_Gender);
+            this.panel4.Controls.Add(this.label2);
+            this.panel4.Location = new System.Drawing.Point(3, 102);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(454, 27);
+            this.panel4.TabIndex = 4;
+            // 
+            // cb_Gender
+            // 
+            this.cb_Gender.FormattingEnabled = true;
+            this.cb_Gender.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.cb_Gender.Location = new System.Drawing.Point(89, 3);
+            this.cb_Gender.Name = "cb_Gender";
+            this.cb_Gender.Size = new System.Drawing.Size(362, 24);
+            this.cb_Gender.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(-1, 6);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(52, 16);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Gender";
+            // 
             // labeledInputText5
             // 
-            this.labeledInputText5.BackColor = System.Drawing.SystemColors.Control;
+            this.labeledInputText5.BackColor = System.Drawing.SystemColors.Window;
             this.labeledInputText5.Location = new System.Drawing.Point(3, 3);
             this.labeledInputText5.Multiline = false;
             this.labeledInputText5.Name = "labeledInputText5";
@@ -215,7 +313,7 @@
             // 
             // labeledInputText6
             // 
-            this.labeledInputText6.BackColor = System.Drawing.SystemColors.Control;
+            this.labeledInputText6.BackColor = System.Drawing.SystemColors.Window;
             this.labeledInputText6.Location = new System.Drawing.Point(3, 36);
             this.labeledInputText6.Multiline = false;
             this.labeledInputText6.Name = "labeledInputText6";
@@ -225,7 +323,7 @@
             // 
             // labeledInputText12
             // 
-            this.labeledInputText12.BackColor = System.Drawing.SystemColors.Control;
+            this.labeledInputText12.BackColor = System.Drawing.SystemColors.Window;
             this.labeledInputText12.Location = new System.Drawing.Point(3, 3);
             this.labeledInputText12.Multiline = false;
             this.labeledInputText12.Name = "labeledInputText12";
@@ -235,7 +333,7 @@
             // 
             // labeledInputText13
             // 
-            this.labeledInputText13.BackColor = System.Drawing.SystemColors.Control;
+            this.labeledInputText13.BackColor = System.Drawing.SystemColors.Window;
             this.labeledInputText13.Location = new System.Drawing.Point(3, 36);
             this.labeledInputText13.Multiline = false;
             this.labeledInputText13.Name = "labeledInputText13";
@@ -245,7 +343,7 @@
             // 
             // labeledInputText7
             // 
-            this.labeledInputText7.BackColor = System.Drawing.SystemColors.Control;
+            this.labeledInputText7.BackColor = System.Drawing.SystemColors.Window;
             this.labeledInputText7.Location = new System.Drawing.Point(3, 69);
             this.labeledInputText7.Multiline = true;
             this.labeledInputText7.Name = "labeledInputText7";
@@ -255,7 +353,7 @@
             // 
             // labeledInputText1
             // 
-            this.labeledInputText1.BackColor = System.Drawing.SystemColors.Control;
+            this.labeledInputText1.BackColor = System.Drawing.SystemColors.Window;
             this.labeledInputText1.Location = new System.Drawing.Point(3, 3);
             this.labeledInputText1.Multiline = false;
             this.labeledInputText1.Name = "labeledInputText1";
@@ -265,7 +363,7 @@
             // 
             // labeledInputText2
             // 
-            this.labeledInputText2.BackColor = System.Drawing.SystemColors.Control;
+            this.labeledInputText2.BackColor = System.Drawing.SystemColors.Window;
             this.labeledInputText2.Location = new System.Drawing.Point(3, 36);
             this.labeledInputText2.Multiline = false;
             this.labeledInputText2.Name = "labeledInputText2";
@@ -275,7 +373,7 @@
             // 
             // labeledInputText3
             // 
-            this.labeledInputText3.BackColor = System.Drawing.SystemColors.Control;
+            this.labeledInputText3.BackColor = System.Drawing.SystemColors.Window;
             this.labeledInputText3.Location = new System.Drawing.Point(3, 69);
             this.labeledInputText3.Multiline = false;
             this.labeledInputText3.Name = "labeledInputText3";
@@ -283,19 +381,9 @@
             this.labeledInputText3.TabIndex = 2;
             this.labeledInputText3.Title = "birth place";
             // 
-            // labeledInputText4
-            // 
-            this.labeledInputText4.BackColor = System.Drawing.SystemColors.Control;
-            this.labeledInputText4.Location = new System.Drawing.Point(3, 102);
-            this.labeledInputText4.Multiline = false;
-            this.labeledInputText4.Name = "labeledInputText4";
-            this.labeledInputText4.Size = new System.Drawing.Size(454, 27);
-            this.labeledInputText4.TabIndex = 3;
-            this.labeledInputText4.Title = "Gender";
-            // 
             // labeledInputText8
             // 
-            this.labeledInputText8.BackColor = System.Drawing.SystemColors.Control;
+            this.labeledInputText8.BackColor = System.Drawing.SystemColors.Window;
             this.labeledInputText8.Location = new System.Drawing.Point(3, 3);
             this.labeledInputText8.Multiline = false;
             this.labeledInputText8.Name = "labeledInputText8";
@@ -305,33 +393,13 @@
             // 
             // labeledInputText9
             // 
-            this.labeledInputText9.BackColor = System.Drawing.SystemColors.Control;
+            this.labeledInputText9.BackColor = System.Drawing.SystemColors.Window;
             this.labeledInputText9.Location = new System.Drawing.Point(3, 36);
             this.labeledInputText9.Multiline = false;
             this.labeledInputText9.Name = "labeledInputText9";
             this.labeledInputText9.Size = new System.Drawing.Size(454, 27);
             this.labeledInputText9.TabIndex = 1;
             this.labeledInputText9.Title = "Mother";
-            // 
-            // labeledInputText10
-            // 
-            this.labeledInputText10.BackColor = System.Drawing.SystemColors.Control;
-            this.labeledInputText10.Location = new System.Drawing.Point(3, 69);
-            this.labeledInputText10.Multiline = false;
-            this.labeledInputText10.Name = "labeledInputText10";
-            this.labeledInputText10.Size = new System.Drawing.Size(454, 27);
-            this.labeledInputText10.TabIndex = 2;
-            this.labeledInputText10.Title = "birth Date";
-            // 
-            // labeledInputText11
-            // 
-            this.labeledInputText11.BackColor = System.Drawing.SystemColors.Control;
-            this.labeledInputText11.Location = new System.Drawing.Point(3, 102);
-            this.labeledInputText11.Multiline = false;
-            this.labeledInputText11.Name = "labeledInputText11";
-            this.labeledInputText11.Size = new System.Drawing.Size(454, 27);
-            this.labeledInputText11.TabIndex = 3;
-            this.labeledInputText11.Title = "Boold Type";
             // 
             // Form_AddNewPatient
             // 
@@ -362,6 +430,12 @@
             this.flowLayoutPanel3.ResumeLayout(false);
             this.flowLayoutPanel4.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -378,12 +452,9 @@
         private Widgets.LabeledInputText labeledInputText1;
         private Widgets.LabeledInputText labeledInputText2;
         private Widgets.LabeledInputText labeledInputText3;
-        private Widgets.LabeledInputText labeledInputText4;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private Widgets.LabeledInputText labeledInputText8;
         private Widgets.LabeledInputText labeledInputText9;
-        private Widgets.LabeledInputText labeledInputText10;
-        private Widgets.LabeledInputText labeledInputText11;
         private System.Windows.Forms.SplitContainer splitContainer2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private Widgets.LabeledInputText labeledInputText5;
@@ -392,5 +463,14 @@
         private Widgets.LabeledInputText labeledInputText12;
         private Widgets.LabeledInputText labeledInputText13;
         private Widgets.LabeledInputText labeledInputText7;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label lbl_BloodType;
+        private System.Windows.Forms.ComboBox cb_BloodType;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.DateTimePicker dtp_BirthDate;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.ComboBox cb_Gender;
+        private System.Windows.Forms.Label label2;
     }
 }

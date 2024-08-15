@@ -21,5 +21,12 @@ namespace clinic_2.forms
         {
             Close();
         }
+
+        public void AddNewPatientToDateBase()
+        {
+           
+        }
+
+        
     }
 }

@@ -38,18 +38,17 @@
             this.lbltitel = new System.Windows.Forms.Label();
             this.sqLiteCommandBuilder1 = new System.Data.SQLite.SQLiteCommandBuilder();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.flowLayoutPanel1);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -58,7 +57,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(0, 96);
+            this.button5.Location = new System.Drawing.Point(3, 76);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(164, 67);
             this.button5.TabIndex = 6;
@@ -77,7 +76,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(0, 315);
+            this.button3.Location = new System.Drawing.Point(3, 222);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(164, 67);
             this.button3.TabIndex = 5;
@@ -87,7 +86,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(0, 242);
+            this.button2.Location = new System.Drawing.Point(3, 149);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(164, 67);
             this.button2.TabIndex = 5;
@@ -97,7 +96,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(-1, 169);
+            this.button1.Location = new System.Drawing.Point(3, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(164, 67);
             this.button1.TabIndex = 5;
@@ -138,6 +137,19 @@
             this.panel4.Size = new System.Drawing.Size(1251, 581);
             this.panel4.TabIndex = 5;
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.button1);
+            this.flowLayoutPanel1.Controls.Add(this.button5);
+            this.flowLayoutPanel1.Controls.Add(this.button2);
+            this.flowLayoutPanel1.Controls.Add(this.button3);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 88);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(166, 581);
+            this.flowLayoutPanel1.TabIndex = 7;
+            // 
             // mainform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -153,6 +165,7 @@
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -168,6 +181,7 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label lbltitel;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }
 

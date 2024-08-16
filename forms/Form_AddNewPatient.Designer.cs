@@ -31,7 +31,16 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.cb_Gender = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.dtp_BirthDate = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.cb_BloodType = new System.Windows.Forms.ComboBox();
+            this.lbl_BloodType = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
@@ -39,15 +48,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_Cancel = new System.Windows.Forms.Button();
             this.btn_Save = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.lbl_BloodType = new System.Windows.Forms.Label();
-            this.cb_BloodType = new System.Windows.Forms.ComboBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.dtp_BirthDate = new System.Windows.Forms.DateTimePicker();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.cb_Gender = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.labeledInputText5 = new clinic_2.Widgets.LabeledInputText();
             this.labeledInputText6 = new clinic_2.Widgets.LabeledInputText();
             this.labeledInputText12 = new clinic_2.Widgets.LabeledInputText();
@@ -64,7 +64,10 @@
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
@@ -73,13 +76,13 @@
             this.flowLayoutPanel3.SuspendLayout();
             this.flowLayoutPanel4.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.splitContainer1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
@@ -118,6 +121,35 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(524, 260);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.cb_Gender);
+            this.panel4.Controls.Add(this.label2);
+            this.panel4.Location = new System.Drawing.Point(3, 102);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(454, 27);
+            this.panel4.TabIndex = 4;
+            // 
+            // cb_Gender
+            // 
+            this.cb_Gender.FormattingEnabled = true;
+            this.cb_Gender.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.cb_Gender.Location = new System.Drawing.Point(89, 3);
+            this.cb_Gender.Name = "cb_Gender";
+            this.cb_Gender.Size = new System.Drawing.Size(362, 24);
+            this.cb_Gender.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(-1, 6);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(52, 16);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Gender";
+            // 
             // flowLayoutPanel2
             // 
             this.flowLayoutPanel2.Controls.Add(this.labeledInputText8);
@@ -131,8 +163,71 @@
             this.flowLayoutPanel2.Size = new System.Drawing.Size(853, 260);
             this.flowLayoutPanel2.TabIndex = 7;
             // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.dtp_BirthDate);
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Location = new System.Drawing.Point(3, 69);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(454, 27);
+            this.panel3.TabIndex = 4;
+            // 
+            // dtp_BirthDate
+            // 
+            this.dtp_BirthDate.Location = new System.Drawing.Point(89, 4);
+            this.dtp_BirthDate.Name = "dtp_BirthDate";
+            this.dtp_BirthDate.Size = new System.Drawing.Size(362, 22);
+            this.dtp_BirthDate.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(-1, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(61, 16);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Bith Date";
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.cb_BloodType);
+            this.panel2.Controls.Add(this.lbl_BloodType);
+            this.panel2.Location = new System.Drawing.Point(3, 102);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(454, 27);
+            this.panel2.TabIndex = 3;
+            // 
+            // cb_BloodType
+            // 
+            this.cb_BloodType.FormattingEnabled = true;
+            this.cb_BloodType.Items.AddRange(new object[] {
+            "O RH+",
+            "O RH-",
+            "A RH+",
+            "A RH-",
+            "B RH+",
+            "B RH-",
+            "AB RH+",
+            "AB RH-"});
+            this.cb_BloodType.Location = new System.Drawing.Point(89, 3);
+            this.cb_BloodType.Name = "cb_BloodType";
+            this.cb_BloodType.Size = new System.Drawing.Size(362, 24);
+            this.cb_BloodType.TabIndex = 1;
+            // 
+            // lbl_BloodType
+            // 
+            this.lbl_BloodType.AutoSize = true;
+            this.lbl_BloodType.Location = new System.Drawing.Point(-1, 6);
+            this.lbl_BloodType.Name = "lbl_BloodType";
+            this.lbl_BloodType.Size = new System.Drawing.Size(78, 16);
+            this.lbl_BloodType.TabIndex = 0;
+            this.lbl_BloodType.Text = "Blood Type";
+            // 
             // groupBox2
             // 
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.BackColor = System.Drawing.SystemColors.Window;
             this.groupBox2.Controls.Add(this.splitContainer2);
             this.groupBox2.Location = new System.Drawing.Point(12, 299);
@@ -184,6 +279,8 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.btn_Cancel);
             this.panel1.Controls.Add(this.btn_Save);
             this.panel1.Location = new System.Drawing.Point(12, 590);
@@ -211,95 +308,6 @@
             this.btn_Save.TabIndex = 0;
             this.btn_Save.Text = "Save";
             this.btn_Save.UseVisualStyleBackColor = false;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.cb_BloodType);
-            this.panel2.Controls.Add(this.lbl_BloodType);
-            this.panel2.Location = new System.Drawing.Point(3, 102);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(454, 27);
-            this.panel2.TabIndex = 3;
-            // 
-            // lbl_BloodType
-            // 
-            this.lbl_BloodType.AutoSize = true;
-            this.lbl_BloodType.Location = new System.Drawing.Point(-1, 6);
-            this.lbl_BloodType.Name = "lbl_BloodType";
-            this.lbl_BloodType.Size = new System.Drawing.Size(78, 16);
-            this.lbl_BloodType.TabIndex = 0;
-            this.lbl_BloodType.Text = "Blood Type";
-            // 
-            // cb_BloodType
-            // 
-            this.cb_BloodType.FormattingEnabled = true;
-            this.cb_BloodType.Items.AddRange(new object[] {
-            "O RH+",
-            "O RH-",
-            "A RH+",
-            "A RH-",
-            "B RH+",
-            "B RH-",
-            "AB RH+",
-            "AB RH-"});
-            this.cb_BloodType.Location = new System.Drawing.Point(89, 3);
-            this.cb_BloodType.Name = "cb_BloodType";
-            this.cb_BloodType.Size = new System.Drawing.Size(362, 24);
-            this.cb_BloodType.TabIndex = 1;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.dtp_BirthDate);
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Location = new System.Drawing.Point(3, 69);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(454, 27);
-            this.panel3.TabIndex = 4;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(-1, 6);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Bith Date";
-            // 
-            // dtp_BirthDate
-            // 
-            this.dtp_BirthDate.Location = new System.Drawing.Point(89, 4);
-            this.dtp_BirthDate.Name = "dtp_BirthDate";
-            this.dtp_BirthDate.Size = new System.Drawing.Size(362, 22);
-            this.dtp_BirthDate.TabIndex = 1;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.cb_Gender);
-            this.panel4.Controls.Add(this.label2);
-            this.panel4.Location = new System.Drawing.Point(3, 102);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(454, 27);
-            this.panel4.TabIndex = 4;
-            // 
-            // cb_Gender
-            // 
-            this.cb_Gender.FormattingEnabled = true;
-            this.cb_Gender.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
-            this.cb_Gender.Location = new System.Drawing.Point(89, 3);
-            this.cb_Gender.Name = "cb_Gender";
-            this.cb_Gender.Size = new System.Drawing.Size(362, 24);
-            this.cb_Gender.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(-1, 6);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 16);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Gender";
             // 
             // labeledInputText5
             // 
@@ -405,7 +413,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1411, 630);
@@ -421,7 +428,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.flowLayoutPanel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.splitContainer2.Panel1.ResumeLayout(false);
             this.splitContainer2.Panel2.ResumeLayout(false);
@@ -430,12 +443,6 @@
             this.flowLayoutPanel3.ResumeLayout(false);
             this.flowLayoutPanel4.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }

@@ -28,6 +28,12 @@ namespace clinic_2.Widgets
             get => txt_Value.Multiline;
             set => txt_Value.Multiline = value;
         }
+
+        public bool ReadOnly
+        {
+            get => txt_Value.ReadOnly;
+            set => txt_Value.ReadOnly = value;
+        }
         [Browsable(true)]
         public string Title
         {

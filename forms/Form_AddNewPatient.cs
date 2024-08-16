@@ -19,12 +19,14 @@ namespace clinic_2.forms
 
         private void btn_Cancel_MouseClick(object sender, MouseEventArgs e)
         {
-            Close();
+            
         }
 
         public void AddNewPatientToDateBase()
         {
-           
+           //validate form first
+           //check if patient is not already present
+           //add the patient data to the database
         }
 
         

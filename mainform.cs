@@ -75,12 +75,12 @@ namespace clinic_2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            openchildform(new forms.patient_info(), sender);
+            openchildform(new forms.Form_MainScreen(), sender);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            openchildform(new forms.examination(), sender);
+            
         }
 
         private void button3_Click(object sender, EventArgs e)

@@ -61,17 +61,17 @@
     <Compile Include="forms\add_examination.Designer.cs">
       <DependentUpon>add_examination.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\examination.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="forms\examination.Designer.cs">
-      <DependentUpon>examination.cs</DependentUpon>
-    </Compile>
     <Compile Include="forms\Form_AddNewPatient.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="forms\Form_AddNewPatient.Designer.cs">
       <DependentUpon>Form_AddNewPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Form_MainScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Form_MainScreen.Designer.cs">
+      <DependentUpon>Form_MainScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="mainform.cs">
       <SubType>Form</SubType>
@@ -98,11 +98,11 @@
     <EmbeddedResource Include="forms\add_examination.resx">
       <DependentUpon>add_examination.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\examination.resx">
-      <DependentUpon>examination.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="forms\Form_AddNewPatient.resx">
       <DependentUpon>Form_AddNewPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Form_MainScreen.resx">
+      <DependentUpon>Form_MainScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mainform.resx">
       <DependentUpon>mainform.cs</DependentUpon>
@@ -139,9 +139,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Widgets\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
